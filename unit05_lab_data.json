@@ -1,0 +1,159 @@
+{
+  "ckip_dict": {
+    "recommend_dictionary": {
+      "人工智慧研究中心": 1,
+      "量子運算研究中心": 1,
+      "先進封裝研究中心": 1,
+      "程序委員會": 1,
+      "財政委員會": 1,
+      "外交及國防委員會": 1,
+      "台灣積體電路製造": 1,
+      "中央研究院": 1
+    },
+    "coerce_dictionary": {
+      "台灣大學資訊工程學系": 2,
+      "台北大學資訊工程學系": 2,
+      "矽島智匯": 2,
+      "青鳥數位聯盟": 2
+    }
+  },
+  "datasets": {
+    "tech_academia": {
+      "description": "主題一：科技產業與學術機構合作（產學研發聯盟）",
+      "roster": [
+        {"id": "O01", "canonical_name": "台灣積體電路製造", "type": "ORG", "aliases": ["台積電", "TSMC"]},
+        {"id": "O02", "canonical_name": "中央研究院", "type": "ORG", "aliases": ["中研院", "Academia Sinica"]},
+        {"id": "O03", "canonical_name": "國立臺灣大學", "type": "ORG", "aliases": ["台灣大學", "台大"]},
+        {"id": "O04", "canonical_name": "國立臺北大學", "type": "ORG", "aliases": ["台北大學", "北大"]},
+        {"id": "P01", "canonical_name": "魏哲家", "type": "PERSON", "context": "台積電董事長兼總裁", "aliases": ["C.C. Wei"]},
+        {"id": "P02", "canonical_name": "黃仁勳", "type": "PERSON", "context": "NVIDIA執行長", "aliases": ["Jensen Huang"]},
+        {"id": "P03", "canonical_name": "蘇姿丰", "type": "PERSON", "context": "AMD執行長", "aliases": ["Lisa Su"]},
+        {"id": "P04", "canonical_name": "陳明哲", "type": "PERSON", "context": "台大資工教授"},
+        {"id": "P05", "canonical_name": "陳明哲", "type": "PERSON", "context": "北大法律教授"}
+      ],
+      "corpus": [
+        {"doc_id": "tech_01", "text": "台積電與中研院今日簽署合作備忘錄，由魏哲家代表出席。"},
+        {"doc_id": "tech_02", "text": "ＴＳＭＣ與中央研究院擴大合作，魏 哲 家親自率隊拜訪。"},
+        {"doc_id": "tech_03", "text": "執行長黃仁勳（Jensen Huang）今日與魏・哲・家同台對談。"},
+        {"doc_id": "tech_04", "text": "黃‧仁‧勳與蘇姿丰共同參訪中央研究院的人工智慧研究中心。"},
+        {"doc_id": "tech_05", "text": "蘇-姿-丰今日赴台灣大學，與量子運算研究中心團隊交流。"},
+        {"doc_id": "tech_06", "text": "台灣大學資訊工程學系與台積電合作，共同成立先進封裝研究中心。"},
+        {"doc_id": "tech_07", "text": "台北大學資訊工程學系與中央研究院合作，發表最新開源語言模型。"},
+        {"doc_id": "tech_08", "text": "本中心與該研究中心預計於下週召開會議，由中心主任主持。"},
+        {"doc_id": "tech_09", "text": "台大資工陳明哲教授與陳明哲今日皆出席了人工智慧研究中心的論壇。"},
+        {"doc_id": "tech_10", "text": "新創團隊「矽島智匯」宣布與蘇姿丰及黃仁勳展開晶片架構合作。"}
+      ]
+    },
+    "legislative_yuan": {
+      "description": "主題二：立法院法案審查與委員提案共現",
+      "roster": [
+        {"id": "C01", "canonical_name": "程序委員會", "type": "ORG"},
+        {"id": "C02", "canonical_name": "財政委員會", "type": "ORG"},
+        {"id": "C03", "canonical_name": "外交及國防委員會", "type": "ORG"},
+        {"id": "M01", "canonical_name": "王小明", "type": "PERSON", "context": "財政委員會委員", "aliases": ["Wang, Hsiao-Ming"]},
+        {"id": "M02", "canonical_name": "林淑芬", "type": "PERSON", "context": "社福衛環委員"},
+        {"id": "M03", "canonical_name": "陳冠廷", "type": "PERSON", "context": "外交及國防委員"},
+        {"id": "M04", "canonical_name": "伍麗華", "type": "PERSON", "context": "原住民選區委員", "aliases": ["Saidhai Tahovecahe"]},
+        {"id": "M05", "canonical_name": "張志明", "type": "PERSON", "context": "資深財政委員"},
+        {"id": "M06", "canonical_name": "張志豪", "type": "PERSON", "context": "新科交通委員"},
+        {"id": "M07", "canonical_name": "李建國", "type": "PERSON", "context": "台北選區委員"},
+        {"id": "M08", "canonical_name": "李建國", "type": "PERSON", "context": "高雄選區委員"}
+      ],
+      "corpus": [
+        {"doc_id": "leg_01", "text": "王小明與林淑芬於程序委員會共同提出臨時動議。"},
+        {"doc_id": "leg_02", "text": "王 小 明今日在財政委員會質詢，林 淑 芬亦到場聯署。"},
+        {"doc_id": "leg_03", "text": "委員王・小・明（Wang, Hsiao-Ming）與陳冠廷共同召開公聽會。"},
+        {"doc_id": "leg_04", "text": "伍麗華‧Ｓａｉｄｈａｉ與陳冠廷於外交及國防委員會進行專案報告。"},
+        {"doc_id": "leg_05", "text": "張志明委員與王小明在財政委員會針對稅制改革交換意見。"},
+        {"doc_id": "leg_06", "text": "張志豪委員與林淑芬今日就國道延伸案向交通部提出書面質詢。"},
+        {"doc_id": "leg_07", "text": "本委員會與各委員會今日決議，將該草案交由委員會審查。"},
+        {"doc_id": "leg_08", "text": "陳冠廷與朝野協商黨團、青年世代黨團共同簽署附帶決議。"},
+        {"doc_id": "leg_09", "text": "來自高雄的李建國委員與李建國先後於程序委員會登記發言。"},
+        {"doc_id": "leg_10", "text": "民間倡議組織「青鳥數位聯盟」拜會伍麗華與林淑芬，遞交修法建言書。"}
+      ]
+    }
+  },
+  "llm_recorded_logs": {
+    "Batch_01_raw_unconstrained": {
+      "metadata": "模擬未加嚴格限制詞的輸出（含原文不存在的腦補幻覺、非法 Schema 類別、空值與反例誤抓，供學生練習撰寫 Validator 攔截）",
+      "tech_academia": {
+        "tech_01": [{"text": "台積電", "type": "ORG"}, {"text": "中研院", "type": "ORG"}, {"text": "魏哲家", "type": "PERSON"}, {"text": "張忠謀", "type": "PERSON"}],
+        "tech_02": [{"text": "TSMC", "type": "COMPANY"}, {"text": "中央研究院", "type": "ORG"}, {"text": "魏 哲 家", "type": "PERSON"}],
+        "tech_03": [{"text": "黃仁勳", "type": "PERSON"}, {"text": "Jensen Huang", "type": "PERSON"}, {"text": "NVIDIA", "type": "ORG"}, {"text": "魏・哲・家", "type": "PERSON"}],
+        "tech_04": [{"text": "黃‧仁‧勳", "type": "PERSON"}, {"text": "蘇姿丰", "type": "PERSON"}, {"text": "中央研究院", "type": "ORG"}, {"text": "人工智慧研究中心", "type": "ORG"}],
+        "tech_05": [{"text": "蘇-姿-丰", "type": "PERSON"}, {"text": "台灣大學", "type": "ORG"}, {"text": "量子運算研究中心", "type": "ORG"}],
+        "tech_06": [{"text": "台灣大學資訊工程學系", "type": "ORG"}, {"text": "台積電", "type": "ORG"}, {"text": "先進封裝研究中心", "type": "ORG"}],
+        "tech_07": [{"text": "台北大學資訊工程學系", "type": "ORG"}, {"text": "中央研究院", "type": "ORG"}, {"text": "", "type": "ORG"}],
+        "tech_08": [{"text": "本中心", "type": "ORG"}, {"text": "該研究中心", "type": "ORG"}, {"text": "中心主任", "type": "ROLE"}],
+        "tech_09": [{"text": "陳明哲", "type": "PERSON"}, {"text": "人工智慧研究中心", "type": "ORG"}],
+        "tech_10": [{"text": "矽島智匯", "type": "ORG"}, {"text": "蘇姿丰", "type": "PERSON"}, {"text": "黃仁勳", "type": "PERSON"}]
+      },
+      "legislative_yuan": {
+        "leg_01": [{"text": "王小明", "type": "PERSON"}, {"text": "林淑芬", "type": "PERSON"}, {"text": "程序委員會", "type": "ORG"}],
+        "leg_02": [{"text": "王小明", "type": "PERSON"}, {"text": "財政委員會", "type": "COMMITTEE"}, {"text": "林 淑 芬", "type": "PERSON"}],
+        "leg_03": [{"text": "王・小・明", "type": "PERSON"}, {"text": "Wang, Hsiao-Ming", "type": "PERSON"}, {"text": "陳冠廷", "type": "PERSON"}, {"text": "立法院", "type": "ORG"}],
+        "leg_04": [{"text": "伍麗華‧Ｓａｉｄｈａｉ", "type": "PERSON"}, {"text": "陳冠廷", "type": "PERSON"}, {"text": "外交及國防委員會", "type": "ORG"}],
+        "leg_05": [{"text": "張志明", "type": "PERSON"}, {"text": "王小明", "type": "PERSON"}, {"text": "財政委員會", "type": "ORG"}],
+        "leg_06": [{"text": "張志豪", "type": "PERSON"}, {"text": "林淑芬", "type": "PERSON"}, {"text": "交通部", "type": "GOV_AGENCY"}],
+        "leg_07": [{"text": "本委員會", "type": "ORG"}, {"text": "各委員會", "type": "ORG"}, {"text": "", "type": "ORG"}],
+        "leg_08": [{"text": "陳冠廷", "type": "PERSON"}, {"text": "朝野協商黨團", "type": "ORG"}, {"text": "青年世代黨團", "type": "ORG"}],
+        "leg_09": [{"text": "李建國", "type": "PERSON"}, {"text": "程序委員會", "type": "ORG"}],
+        "leg_10": [{"text": "青鳥數位聯盟", "type": "ORG"}, {"text": "伍麗華", "type": "PERSON"}, {"text": "林淑芬", "type": "PERSON"}]
+      }
+    },
+    "Batch_02_Run_A": {
+      "metadata": "嚴格遵守 Prompt 規則之第一次獨立執行（供 Run A vs Run B 穩定度測試與 LLM Scout 模式統計）",
+      "tech_academia": {
+        "tech_01": [{"text": "台積電", "type": "ORG", "matched_id": "O01"}, {"text": "中研院", "type": "ORG", "matched_id": "O02"}, {"text": "魏哲家", "type": "PERSON", "matched_id": "P01"}],
+        "tech_02": [{"text": "ＴＳＭＣ", "type": "ORG", "matched_id": "O01"}, {"text": "中央研究院", "type": "ORG", "matched_id": "O02"}, {"text": "魏 哲 家", "type": "PERSON", "matched_id": "P01"}],
+        "tech_03": [{"text": "黃仁勳", "type": "PERSON", "matched_id": "P02"}, {"text": "Jensen Huang", "type": "PERSON", "matched_id": "P02"}, {"text": "魏・哲・家", "type": "PERSON", "matched_id": "P01"}],
+        "tech_04": [{"text": "黃‧仁‧勳", "type": "PERSON", "matched_id": "P02"}, {"text": "蘇姿丰", "type": "PERSON", "matched_id": "P03"}, {"text": "中央研究院", "type": "ORG", "matched_id": "O02"}, {"text": "人工智慧研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_05": [{"text": "蘇-姿-丰", "type": "PERSON", "matched_id": "P03"}, {"text": "台灣大學", "type": "ORG", "matched_id": "O03"}, {"text": "量子運算研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_06": [{"text": "台灣大學資訊工程學系", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "台積電", "type": "ORG", "matched_id": "O01"}, {"text": "先進封裝研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_07": [{"text": "台北大學資訊工程學系", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "中央研究院", "type": "ORG", "matched_id": "O02"}],
+        "tech_08": [{"text": "該研究中心", "type": "ORG", "matched_id": "UNRESOLVED"}],
+        "tech_09": [{"text": "陳明哲", "type": "PERSON", "matched_id": "P04"}, {"text": "陳明哲", "type": "PERSON", "matched_id": "UNRESOLVED"}, {"text": "人工智慧研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_10": [{"text": "矽島智匯", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "蘇姿丰", "type": "PERSON", "matched_id": "P03"}, {"text": "黃仁勳", "type": "PERSON", "matched_id": "P02"}]
+      },
+      "legislative_yuan": {
+        "leg_01": [{"text": "王小明", "type": "PERSON", "matched_id": "M01"}, {"text": "林淑芬", "type": "PERSON", "matched_id": "M02"}, {"text": "程序委員會", "type": "ORG", "matched_id": "C01"}],
+        "leg_02": [{"text": "王 小 明", "type": "PERSON", "matched_id": "M01"}, {"text": "財政委員會", "type": "ORG", "matched_id": "C02"}, {"text": "林 淑 芬", "type": "PERSON", "matched_id": "M02"}],
+        "leg_03": [{"text": "王・小・明", "type": "PERSON", "matched_id": "M01"}, {"text": "Wang, Hsiao-Ming", "type": "PERSON", "matched_id": "M01"}, {"text": "陳冠廷", "type": "PERSON", "matched_id": "M03"}],
+        "leg_04": [{"text": "伍麗華‧Ｓａｉｄｈａｉ", "type": "PERSON", "matched_id": "M04"}, {"text": "陳冠廷", "type": "PERSON", "matched_id": "M03"}, {"text": "外交及國防委員會", "type": "ORG", "matched_id": "C03"}],
+        "leg_05": [{"text": "張志明", "type": "PERSON", "matched_id": "M05"}, {"text": "王小明", "type": "PERSON", "matched_id": "M01"}, {"text": "財政委員會", "type": "ORG", "matched_id": "C02"}],
+        "leg_06": [{"text": "張志豪", "type": "PERSON", "matched_id": "M06"}, {"text": "林淑芬", "type": "PERSON", "matched_id": "M02"}, {"text": "交通部", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "leg_07": [{"text": "本委員會", "type": "ORG", "matched_id": "UNRESOLVED"}],
+        "leg_08": [{"text": "陳冠廷", "type": "PERSON", "matched_id": "M03"}, {"text": "朝野協商黨團", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "青年世代黨團", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "leg_09": [{"text": "李建國", "type": "PERSON", "matched_id": "M08"}, {"text": "李建國", "type": "PERSON", "matched_id": "UNRESOLVED"}, {"text": "程序委員會", "type": "ORG", "matched_id": "C01"}],
+        "leg_10": [{"text": "青鳥數位聯盟", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "伍麗華", "type": "PERSON", "matched_id": "M04"}, {"text": "林淑芬", "type": "PERSON", "matched_id": "M02"}]
+      }
+    },
+    "Batch_03_Run_B": {
+      "metadata": "相同條件下第二次獨立執行（在 tech_03/05/08/09 與 leg_03/07/08/09 存在覆蓋差異與分類差異，對應投影片 p.21-22）",
+      "tech_academia": {
+        "tech_01": [{"text": "台積電", "type": "ORG", "matched_id": "O01"}, {"text": "中研院", "type": "ORG", "matched_id": "O02"}, {"text": "魏哲家", "type": "PERSON", "matched_id": "P01"}],
+        "tech_02": [{"text": "ＴＳＭＣ", "type": "ORG", "matched_id": "O01"}, {"text": "中央研究院", "type": "ORG", "matched_id": "O02"}, {"text": "魏 哲 家", "type": "PERSON", "matched_id": "P01"}],
+        "tech_03": [{"text": "黃仁勳", "type": "PERSON", "matched_id": "P02"}, {"text": "魏・哲・家", "type": "PERSON", "matched_id": "P01"}],
+        "tech_04": [{"text": "黃‧仁‧勳", "type": "PERSON", "matched_id": "P02"}, {"text": "蘇姿丰", "type": "PERSON", "matched_id": "P03"}, {"text": "中央研究院", "type": "ORG", "matched_id": "O02"}, {"text": "人工智慧研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_05": [{"text": "蘇-姿-丰", "type": "PERSON", "matched_id": "P03"}, {"text": "台灣大學", "type": "LOCATION", "matched_id": "O03"}, {"text": "量子運算研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_06": [{"text": "台灣大學資訊工程學系", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "台積電", "type": "ORG", "matched_id": "O01"}, {"text": "先進封裝研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_07": [{"text": "台北大學資訊工程學系", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "中央研究院", "type": "ORG", "matched_id": "O02"}],
+        "tech_08": [],
+        "tech_09": [{"text": "陳明哲", "type": "PERSON", "matched_id": "P04"}, {"text": "陳明哲", "type": "PERSON", "matched_id": "P05"}, {"text": "人工智慧研究中心", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "tech_10": [{"text": "矽島智匯", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "蘇姿丰", "type": "PERSON", "matched_id": "P03"}, {"text": "黃仁勳", "type": "PERSON", "matched_id": "P02"}]
+      },
+      "legislative_yuan": {
+        "leg_01": [{"text": "王小明", "type": "PERSON", "matched_id": "M01"}, {"text": "林淑芬", "type": "PERSON", "matched_id": "M02"}, {"text": "程序委員會", "type": "ORG", "matched_id": "C01"}],
+        "leg_02": [{"text": "王 小 明", "type": "PERSON", "matched_id": "M01"}, {"text": "財政委員會", "type": "ORG", "matched_id": "C02"}, {"text": "林 淑 芬", "type": "PERSON", "matched_id": "M02"}],
+        "leg_03": [{"text": "王・小・明", "type": "PERSON", "matched_id": "M01"}, {"text": "陳冠廷", "type": "PERSON", "matched_id": "M03"}],
+        "leg_04": [{"text": "伍麗華‧Ｓａｉｄｈａｉ", "type": "PERSON", "matched_id": "M04"}, {"text": "陳冠廷", "type": "PERSON", "matched_id": "M03"}, {"text": "外交及國防委員會", "type": "ORG", "matched_id": "C03"}],
+        "leg_05": [{"text": "張志明", "type": "PERSON", "matched_id": "M05"}, {"text": "王小明", "type": "PERSON", "matched_id": "M01"}, {"text": "財政委員會", "type": "ORG", "matched_id": "C02"}],
+        "leg_06": [{"text": "張志豪", "type": "PERSON", "matched_id": "M06"}, {"text": "林淑芬", "type": "PERSON", "matched_id": "M02"}, {"text": "交通部", "type": "ORG", "matched_id": "NEW_ENTITY"}],
+        "leg_07": [],
+        "leg_08": [{"text": "陳冠廷", "type": "PERSON", "matched_id": "M03"}, {"text": "青年世代黨團", "type": "PERSON", "matched_id": "UNRESOLVED"}],
+        "leg_09": [{"text": "李建國", "type": "PERSON", "matched_id": "M08"}, {"text": "李建國", "type": "PERSON", "matched_id": "M07"}, {"text": "程序委員會", "type": "ORG", "matched_id": "C01"}],
+        "leg_10": [{"text": "青鳥數位聯盟", "type": "ORG", "matched_id": "NEW_ENTITY"}, {"text": "伍麗華", "type": "PERSON", "matched_id": "M04"}, {"text": "林淑芬", "type": "PERSON", "matched_id": "M02"}]
+      }
+    }
+  }
+}
